@@ -22,7 +22,9 @@ namespace WebhookReceiver.Services
             AdaptiveCard deliverable = new AdaptiveCard();
             Body body = new Body();
             body.text = "Not implemented yet";
-            deliverable.attachments.First().content.body.Add(body);
+            var content = new Content();
+            content.body.Add(body);
+            deliverable.attachments.Add(new Attachment { content = content });
             cards.Add(deliverable);
             return cards;
         }
