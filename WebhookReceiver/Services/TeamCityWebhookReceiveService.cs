@@ -33,36 +33,36 @@ namespace WebhookReceiver.Services
             {
                 case "BUILD_STARTED":
                     body.text = $"{dateTimeString}{buildIdentifier} started" +
-                        $"\nProject: {_build.payload.buildType.projectName}" +
-                        $"\nBuild Configuration: {_build.payload.buildType.name}" +
-                        $"\nNumber: {_build.payload.number}" +
-                        $"\nStarted By: {_build.payload.triggered.user.name}" +
-                        $"\nBranch: {_build.payload.branchName}" +
-                        $"\nChange Count: {_build.payload.changes.count}" +
-                        $"\nURL: {UtilityService.FormatAdaptiveCardHyperLink(buildIdentifier ,_build.payload.webUrl)}" +
-                        $"\nBuild Agent: {_build.payload.agent.name}";
+                        $"\n\r- Project: {_build.payload.buildType.projectName}" +
+                        $"\n\r- Build Configuration: {_build.payload.buildType.name}" +
+                        $"\n\r- Number: {_build.payload.number}" +
+                        $"\n\r- Started By: {_build.payload.triggered.user.name}" +
+                        $"\n\r- Branch: {_build.payload.branchName}" +
+                        $"\n\r- Change Count: {_build.payload.changes.count}" +
+                        $"\n\r- URL: {UtilityService.FormatAdaptiveCardHyperLink(buildIdentifier ,_build.payload.webUrl)}" +
+                        $"\n\r- Build Agent: {_build.payload.agent.name}";
                     break;
                 case "BUILD_FINISHED":
                     body.text = $"{dateTimeString}{buildIdentifier} completed with status {_build.payload.statusText}" +
-                        $"\nProject: {_build.payload.buildType.projectName}" +
-                        $"\nBuild Configuration: {_build.payload.buildType.name}" +
-                        $"\nNumber: {_build.payload.number}" +
-                        $"\nStarted By: {_build.payload.triggered.user.name}" +
-                        $"\nBranch: {_build.payload.branchName}" +
-                        $"\nChange Count: {_build.payload.changes.count}" +
-                        $"\nURL: {UtilityService.FormatAdaptiveCardHyperLink(buildIdentifier, _build.payload.webUrl)}" +
-                        $"\nBuild Agent: {_build.payload.agent.name}";
+                        $"\n\r- Project: {_build.payload.buildType.projectName}" +
+                        $"\n\r- Build Configuration: {_build.payload.buildType.name}" +
+                        $"\n\r- Number: {_build.payload.number}" +
+                        $"\n\r- Started By: {_build.payload.triggered.user.name}" +
+                        $"\n\r- Branch: {_build.payload.branchName}" +
+                        $"\n\r- Change Count: {_build.payload.changes.count}" +
+                        $"\n\r- URL: {UtilityService.FormatAdaptiveCardHyperLink(buildIdentifier, _build.payload.webUrl)}" +
+                        $"\n\r- Build Agent: {_build.payload.agent.name}";
                     break;
                 case "BUILD_INTERRUPTED":
                     body.text = $"{dateTimeString}{buildIdentifier} was interrupted with status {_build.payload.statusText}" +
-                        $"\nProject: {_build.payload.buildType.projectName}" +
-                        $"\nBuild Configuration: {_build.payload.buildType.name}" +
-                        $"\nNumber: {_build.payload.number}" +
-                        $"\nStarted By: {_build.payload.triggered.user.name}" +
-                        $"\nBranch: {_build.payload.branchName}" +
-                        $"\nChange Count: {_build.payload.changes.count}" +
-                        $"\nURL: {UtilityService.FormatAdaptiveCardHyperLink(buildIdentifier, _build.payload.webUrl)}" +
-                        $"\nBuild Agent: {_build.payload.agent.name}";
+                        $"\n\r- Project: {_build.payload.buildType.projectName}" +
+                        $"\n\r- Build Configuration: {_build.payload.buildType.name}" +
+                        $"\n\r- Number: {_build.payload.number}" +
+                        $"\n\r- Started By: {_build.payload.triggered.user.name}" +
+                        $"\n\r- Branch: {_build.payload.branchName}" +
+                        $"\n\r- Change Count: {_build.payload.changes.count}" +
+                        $"\n\r- URL: {UtilityService.FormatAdaptiveCardHyperLink(buildIdentifier, _build.payload.webUrl)}" +
+                        $"\n\r- Build Agent: {_build.payload.agent.name}";
                     break;
                 case "CHANGES_LOADED":
                     body.text = $"{_build.eventType} not implemented yet";
