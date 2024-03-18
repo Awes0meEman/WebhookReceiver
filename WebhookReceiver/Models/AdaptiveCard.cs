@@ -7,11 +7,6 @@ namespace WebhookReceiver.Models
     {
         public string type { get; set; } = "message";
         public List<Attachment> attachments { get; set; } = new List<Attachment>();
-        public AdaptiveCard() 
-        {
-            var attachment = new Attachment();
-            attachments.Add(attachment);
-        }
     }
     public class Attachment
     {

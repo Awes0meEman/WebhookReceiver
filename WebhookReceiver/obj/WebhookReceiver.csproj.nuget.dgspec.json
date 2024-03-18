@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elekki\\source\\repos\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj": {}
+    "C:\\Users\\elekki\\source\\repos\\WebhookReciever\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elekki\\source\\repos\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj": {
+    "C:\\Users\\elekki\\source\\repos\\WebhookReciever\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elekki\\source\\repos\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj",
+        "projectUniqueName": "C:\\Users\\elekki\\source\\repos\\WebhookReciever\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj",
         "projectName": "WebhookReceiver",
-        "projectPath": "C:\\Users\\elekki\\source\\repos\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj",
+        "projectPath": "C:\\Users\\elekki\\source\\repos\\WebhookReciever\\WebhookReceiver\\WebhookReceiver\\WebhookReceiver.csproj",
         "packagesPath": "C:\\Users\\elekki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elekki\\source\\repos\\WebhookReceiver\\WebhookReceiver\\obj\\",
+        "outputPath": "C:\\Users\\elekki\\source\\repos\\WebhookReciever\\WebhookReceiver\\WebhookReceiver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elekki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "S:\\Software Department\\Developer Software\\NugetFeed\\Packages": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.telerik.com/v3/index.json": {}
         },
