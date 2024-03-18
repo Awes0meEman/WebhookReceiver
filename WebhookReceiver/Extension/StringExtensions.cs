@@ -10,7 +10,7 @@ namespace WebhookReceiver.Extension
             JsonSerializerSettings settings = new JsonSerializerSettings
             {
                 Error = (sender, args) => { success = false; args.ErrorContext.Handled = true; },
-                MissingMemberHandling = MissingMemberHandling.Error
+                MissingMemberHandling = MissingMemberHandling.Ignore
             };
 #pragma warning disable CS8601 // Possible null reference assignment.
             result = JsonConvert.DeserializeObject<T>(str, settings);

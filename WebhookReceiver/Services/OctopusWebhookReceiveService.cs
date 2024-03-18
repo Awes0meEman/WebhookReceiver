@@ -16,13 +16,17 @@ namespace WebhookReceiver.Services
         {
             return _url;
         }
-        public IDeliverable GetDeliverable()
+        public List<IDeliverable> GetDeliverables()
         {
+            List<IDeliverable> cards = new List<IDeliverable>();
             AdaptiveCard deliverable = new AdaptiveCard();
             Body body = new Body();
             body.text = "Not implemented yet";
-            deliverable.attachments.First().content.body.Add(body);
-            return deliverable;
+            var content = new Content();
+            content.body.Add(body);
+            deliverable.attachments.Add(new Attachment { content = content });
+            cards.Add(deliverable);
+            return cards;
         }
     }
 }

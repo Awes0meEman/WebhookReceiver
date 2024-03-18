@@ -13,7 +13,7 @@ namespace WebhookReceiver.Tests
             var url = "";
             var teamCityWebhookReceiveService = new TeamCityWebhookReceiveService(build, url);
             //Act
-            var deliverable = teamCityWebhookReceiveService.GetDeliverable();
+            var deliverable = teamCityWebhookReceiveService.GetDeliverables();
             //Assert
             Assert.NotNull(deliverable);
         }
@@ -26,7 +26,7 @@ namespace WebhookReceiver.Tests
             var url = "";
             var octopusWebhookReceiveService = new OctopusWebhookReceiveService(build, url);
             //Act
-            var deliverable = octopusWebhookReceiveService.GetDeliverable();
+            var deliverable = octopusWebhookReceiveService.GetDeliverables();
             //Assert
             Assert.NotNull(deliverable);
         }
@@ -45,7 +45,7 @@ namespace WebhookReceiver.Tests
             var url = "";
             var teamCityWebhookReceiveService = new TeamCityWebhookReceiveService(build, url);
             //Act
-            var deliverable = teamCityWebhookReceiveService.GetDeliverable();
+            var deliverable = teamCityWebhookReceiveService.GetDeliverables();
             //Assert
             Assert.NotNull(deliverable);
         }
